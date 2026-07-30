@@ -364,7 +364,7 @@
         }
 
         /* BLOQUE 3: VIDEO SECCIÓN */
-        .video-container {
+        <!-- .video-container {
             max-width: 800px;
             margin: 0 auto;
             position: relative;
@@ -381,7 +381,25 @@
             height: 100%;
             object-fit: cover;
             display: block;
-        }
+        } -->
+		.video-container {
+			max-width: 800px;
+			margin: 0 auto;
+			position: relative;
+			border-radius: var(--border-radius);
+			overflow: hidden;
+			box-shadow: var(--shadow-medium);
+			border: 4px solid var(--text-light);
+			background: var(--text-dark) url('LogoEmprenderArte.jpg') center/cover no-repeat;
+			aspect-ratio: 16/9;
+		}
+
+		.video-container iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			display: block;
+		}
 
         /* BLOQUE 4: BENEFICIOS */
         .benefits-section {
@@ -1013,7 +1031,7 @@
             fill: var(--primary-light);
         }
 
-        .video-testimonial-player {
+        <!-- .video-testimonial-player {
             width: 100%;
             aspect-ratio: 9/16;
             border-radius: 12px;
@@ -1023,7 +1041,26 @@
             max-height: 480px;
             object-fit: cover;
             margin: 0 auto;
-        }
+        } -->
+		
+		.video-testimonial-player-wrapper {
+			width: 100%;
+			aspect-ratio: 9/16;
+			border-radius: 12px;
+			background: var(--text-dark) url('LogoEmprenderArte.jpg') center/cover no-repeat;
+			box-shadow: var(--shadow-medium);
+			max-height: 480px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.video-testimonial-player-wrapper iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			display: block;
+		}
 
         .chat-testimonials-box {
             display: flex;
@@ -1070,11 +1107,16 @@
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
-            .video-testimonial-player {
+            <!-- .video-testimonial-player {
                 max-height: 400px;
                 aspect-ratio: 4/5;
                 object-fit: contain;
-            }
+            } -->
+			.video-testimonial-player-wrapper {
+				max-height: 400px;
+				aspect-ratio: 4/5;
+			}
+			
         }
 
         /* BLOQUE 10: AUTORIDAD */
@@ -1431,10 +1473,16 @@
                 
                 <!-- BLOQUE 3: VIDEO INTEGRADO -->
                 <div class="video-container">
-                    <video class="video-player" controls preload="metadata" poster="LogoEmprenderArte.jpg">
+                 <!--   <video class="video-player" controls preload="metadata" poster="LogoEmprenderArte.jpg">
                         <source src="VIDEO PARA PÁGINA.mp4" type="video/mp4">
                         Tu navegador no soporta la reproducción de video HTML5. Por favor descárgalo o intenta con otro navegador.
-                    </video>
+                    </video>  -->
+					<iframe 
+						src="https://www.youtube-nocookie.com/embed/wlJ_fk53yQY?rel=0&modestbranding=1&controls=1" 
+						title="Curso Diseña y Crea con Resina - EmprenderArte" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+						allowfullscreen>
+					</iframe>
                 </div>
             </div>
         </div>
@@ -1825,10 +1873,18 @@
                         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.5 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
                         Testimonio en Video (Caso de Éxito)
                     </h3>
-                    <video class="video-testimonial-player" controls preload="metadata" poster="LogoEmprenderArte.jpg">
+                    <!-- <video class="video-testimonial-player" controls preload="metadata" poster="LogoEmprenderArte.jpg">
                         <source src="VIDEO TESTIMONIO 3.mp4" type="video/mp4">
                         Tu navegador no soporta la reproducción de video HTML5. Por favor descárgalo o intenta con otro navegador.
-                    </video>
+                    </video> -->
+					<div class="video-testimonial-player-wrapper">
+						<iframe 
+							src="https://www.youtube-nocookie.com/embed/Y5GMwRBCcoU?rel=0&modestbranding=1&controls=1" 
+							title="Testimonio Caso de Éxito - EmprenderArte" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+							allowfullscreen>
+						</iframe>
+					</div>
                 </div>
 
                 <!-- Columna Derecha: Capturas de Pantalla Telegram -->
