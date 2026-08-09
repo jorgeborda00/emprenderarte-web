@@ -83,6 +83,7 @@
             --primary-light: #0cb3b8;  /* Turquesa brillante */
             --primary-dark: #054e50;   /* Turquesa oscuro */
             --secondary: #fff0f3;      /* Rosa Blush Pastel */
+            --secondary-light: #fff5f7; /* Rosa Blush Muy Claro */
             --secondary-mid: #f48fb1;  /* Rosa Intermedio */
             --secondary-dark: #D81B60; /* Rosa/fucsia elegante */
             --accent-gold: #C99A3D;    /* Dorado */
@@ -269,30 +270,7 @@
         }
 
         /* Secciones con Fondo Azul Petróleo para mayor profundidad y autoridad */
-        .bg-petroleo {
-            background-color: var(--text-dark) !important;
-            color: var(--text-light);
-        }
 
-        .bg-petroleo h2.section-title {
-            color: var(--text-light) !important;
-        }
-
-        .bg-petroleo h2.section-title::after {
-            background: var(--gold-gradient) !important;
-        }
-
-        .bg-petroleo > .container > p {
-            color: rgba(255, 255, 255, 0.85) !important;
-        }
-
-        .bg-petroleo .order-bump-title {
-            color: var(--text-light) !important;
-        }
-
-        .bg-petroleo .chat-testimonials-title {
-            color: var(--text-light) !important;
-        }
 
         /* HEADER BRANDING */
         .brand-header {
@@ -868,88 +846,108 @@
             fill: var(--accent-gold);
         }
 
-        /* Order Bumps visual structure in Block 7 */
+        /* Order Bumps visual structure in Block 7 (Static Cards) */
         .order-bump-wrapper {
-            margin-top: 40px;
-        }
-
-        .order-bump-title {
-            font-size: 1.5rem;
-            color: var(--primary-dark);
-            margin-bottom: 20px;
+            margin-top: 50px;
             text-align: center;
         }
 
-        .order-bump-card {
-            background-color: rgba(255, 255, 255, 0.04);
+        .order-bump-title {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .order-bump-subtitle {
+            font-size: 1.1rem;
+            color: var(--secondary-dark);
+            margin-bottom: 30px;
+            font-family: var(--font-headings);
+            font-style: italic;
+        }
+
+        .order-bump-card-static {
+            background-color: var(--text-light);
             border: 2px dashed var(--accent-gold);
             border-radius: var(--border-radius);
-            padding: 20px;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            cursor: pointer;
+            padding: 24px;
+            margin-bottom: 20px;
+            text-align: left;
+            box-shadow: var(--shadow-soft);
             transition: var(--transition);
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .order-bump-card:hover {
-            background-color: rgba(255, 255, 255, 0.08);
+        .order-bump-card-static:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
         }
 
-        .order-bump-card.selected {
-            background-color: rgba(201, 154, 61, 0.12);
-            border-color: var(--secondary-dark);
-            border-style: solid;
-        }
-
-        .bump-chk-box {
-            appearance: none;
-            width: 22px;
-            height: 22px;
-            border: 2px solid var(--accent-gold);
-            border-radius: 5px;
-            background-color: var(--text-light);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            margin-top: 3px;
-        }
-
-        .order-bump-card.selected .bump-chk-box {
-            background-color: var(--secondary-dark);
-            border-color: var(--secondary-dark);
-        }
-
-        .bump-chk-box::after {
-            content: '✓';
-            color: var(--text-light);
-            font-size: 0.85rem;
-            font-weight: bold;
-            display: none;
-        }
-
-        .order-bump-card.selected .bump-chk-box::after {
-            display: block;
-        }
-
-        .order-bump-card-info h4 {
-            font-family: var(--font-body);
-            font-size: 1rem;
-            color: var(--accent-gold) !important;
-            margin-bottom: 6px;
+        .order-bump-card-header {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 10px;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 1px dashed rgba(201, 154, 61, 0.2);
+            padding-bottom: 10px;
         }
 
-        .order-bump-card-info p {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.8) !important;
-            line-height: 1.4;
+        .bump-tag {
+            background-color: var(--secondary);
+            color: var(--secondary-dark);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .order-bump-card-static .bump-price {
+            font-size: 1.15rem;
+            color: var(--secondary-dark);
+            font-weight: 800;
+        }
+
+        .order-bump-card-static h4 {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .order-bump-card-static .bump-spec {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .order-bump-card-static p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .order-bump-notices {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .order-bump-notices .notice-item {
+            font-size: 1rem;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .order-bump-notices .notice-item:first-child {
+            color: var(--primary);
         }
 
         /* BLOQUES 8, 11, 13: LLAMADOS A LA ACCIÓN (CTAs) */
@@ -1569,7 +1567,7 @@
     </section>
 
     <!-- SECCIÓN DE IDENTIFICACIÓN DEL DOLOR Y LA SOLUCIÓN (AGITACIÓN) -->
-    <section class="pain-solution-section bg-petroleo">
+    <section class="pain-solution-section">
         <div class="container">
             <h2 class="section-title">El Puente de la Creatividad al Negocio</h2>
             <div class="pain-solution-grid">
@@ -1652,7 +1650,7 @@
     </section>
 
     <!-- BLOQUE 6: MÓDULOS / CONTENIDO -->
-    <section class="syllabus-section bg-petroleo">
+    <section class="syllabus-section">
         <div class="container">
             <h2 class="section-title">Un Programa Completo Diseñado para Llevarte de Novata a Experta</h2>
             <div class="accordion">
@@ -1726,7 +1724,7 @@
     </section>
 
     <!-- BLOQUE 7: PRESENTACIÓN DE LA OFERTA & BONOS & ORDER BUMPS -->
-    <section class="pricing-section bg-petroleo">
+    <section class="pricing-section">
         <div class="container">
             <h2 class="section-title">Detalle Completo de lo que Recibes al Inscribirte Hoy</h2>
             
@@ -1824,64 +1822,45 @@
                 </div>
             </div>
 
-            <!-- Complementos (Order Bumps) -->
+            <!-- Complementos (Order Bumps Informativos) -->
             <div class="order-bump-wrapper">
-                <h3 class="order-bump-title">¡Aprovecha y potencia tus creaciones antes de pagar!</h3>
+                <h3 class="order-bump-title">COMPLEMENTOS OPCIONALES</h3>
+                <p class="order-bump-subtitle">Potencia aún más tu aprendizaje</p>
                 
                 <!-- Complemento 1 -->
-                <div class="order-bump-card" onclick="toggleBump('bump1', 23.00, this)">
-                    <div class="bump-chk-box"></div>
-                    <input type="checkbox" id="bump1" style="display: none;">
-                    <div class="order-bump-card-info">
-                        <h4>
-                            <span>Diseña y Crea Cuadros en Resina (Especialización Completa)</span>
-                            <span class="bump-price">+$23.00 USD aprox.</span>
-                        </h4>
-                        <p>Aprende a realizar obras de gran tamaño sobre bastidores, dominando el vertido de resinas de alta densidad para vender cuadros de lujo.</p>
+                <div class="order-bump-card-static">
+                    <div class="order-bump-card-header">
+                        <span class="bump-tag">OPCIONAL</span>
+                        <span class="bump-price">+$23 USD aprox.</span>
                     </div>
+                    <h4>Diseña y Crea Cuadros en Resina <span class="bump-spec">(Especialización Completa)</span></h4>
+                    <p>Aprende a realizar obras de gran tamaño sobre bastidores, dominando el vertido de resinas de alta densidad para crear y comercializar cuadros de lujo.</p>
                 </div>
 
                 <!-- Complemento 2 -->
-                <div class="order-bump-card" onclick="toggleBump('bump2', 10.00, this)">
-                    <div class="bump-chk-box"></div>
-                    <input type="checkbox" id="bump2" style="display: none;">
-                    <div class="order-bump-card-info">
-                        <h4>
-                            <span>Elabora tus Propios Moldes de Silicona (Fórmula Rápida)</span>
-                            <span class="bump-price">+$10.00 USD aprox.</span>
-                        </h4>
-                        <p>No te limites a los moldes genéricos que todo el mundo compra. Crea tus moldes personalizados para destacar de tu competencia.</p>
+                <div class="order-bump-card-static">
+                    <div class="order-bump-card-header">
+                        <span class="bump-tag">OPCIONAL</span>
+                        <span class="bump-price">+$10 USD aprox.</span>
                     </div>
+                    <h4>Elabora tus Propios Moldes de Silicona <span class="bump-spec">(Fórmula Rápida)</span></h4>
+                    <p>Crea moldes personalizados y deja de depender de los diseños genéricos que utiliza todo el mundo.</p>
+                </div>
+
+                <div class="order-bump-notices">
+                    <p class="notice-item">💡 Puedes agregar estos complementos opcionales directamente en la página de pago de Hotmart.</p>
+                    <p class="notice-item">Selecciona los complementos que desees cuando llegues al checkout.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- BLOQUE 8: BOTÓN DE LLAMADO A LA ACCIÓN (CTA 1) -->
-    <section class="cta-block-section bg-petroleo" id="cta-1">
+    <section class="cta-block-section" id="cta-1">
         <div class="container">
             <div class="cta-container">
-                <!-- Resumen de Compra Dinámico -->
-                <div class="cta-total-display">
-                    <div class="cta-total-row">
-                        <span>Programa Seleccionado + Bonos:</span>
-                        <span>$37.00 USD</span>
-                    </div>
-                    <div class="cta-total-row bump1-summary" style="display: none;">
-                        <span>Complemento: Diseña y Crea Cuadros en Resina:</span>
-                        <span>$23.00 USD</span>
-                    </div>
-                    <div class="cta-total-row bump2-summary" style="display: none;">
-                        <span>Complemento: Moldes de Silicona Personalizados:</span>
-                        <span>$10.00 USD</span>
-                    </div>
-                    <div class="cta-total-row final-total">
-                        <span>Total de tu inversión hoy:</span>
-                        <span class="final-price-text">$37.00 USD</span>
-                    </div>
-                </div>
                 <a href="https://go.hotmart.com/J105288814V?ap=1d28" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
-                    <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA</button>
+                    <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA ($37 USD)</button>
                 </a>
                 <div class="cta-trust-row">
                     <div class="cta-trust-badge">
@@ -1898,7 +1877,7 @@
     </section>
 
     <!-- BLOQUE 9: TESTIMONIOS -->
-    <section class="testimonials-section bg-petroleo">
+    <section class="testimonials-section">
         <div class="container">
             <h2 class="section-title">Lo que Dicen las Alumnas Satisfechas del curso Diseña y Crea con Resina</h2>
             
@@ -1978,29 +1957,11 @@
     </section>
 
     <!-- BLOQUE 11: LLAMADO A LA ACCIÓN (CTA 2) -->
-    <section class="cta-block-section bg-petroleo" id="cta-2">
+    <section class="cta-block-section" id="cta-2">
         <div class="container">
             <div class="cta-container">
-                <div class="cta-total-display">
-                    <div class="cta-total-row">
-                        <span>Programa Seleccionado + Bonos:</span>
-                        <span>$37.00 USD</span>
-                    </div>
-                    <div class="cta-total-row bump1-summary" style="display: none;">
-                        <span>Complemento: Diseña y Crea Cuadros en Resina:</span>
-                        <span>$23.00 USD</span>
-                    </div>
-                    <div class="cta-total-row bump2-summary" style="display: none;">
-                        <span>Complemento: Moldes de Silicona Personalizados:</span>
-                        <span>$10.00 USD</span>
-                    </div>
-                    <div class="cta-total-row final-total">
-                        <span>Total de tu inversión hoy:</span>
-                        <span class="final-price-text">$37.00 USD</span>
-                    </div>
-                </div>
                 <a href="https://go.hotmart.com/J105288814V?ap=1d28" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
-                    <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA</button>
+                    <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA ($37 USD)</button>
                 </a>
                 <div class="cta-trust-row">
                     <div class="cta-trust-badge">
@@ -2028,29 +1989,11 @@
     </section>
 
     <!-- BLOQUE 13: LLAMADO A LA ACCIÓN (CTA 3) -->
-    <section class="cta-block-section bg-petroleo" id="cta-3">
+    <section class="cta-block-section" id="cta-3">
         <div class="container">
             <div class="cta-container">
-                <div class="cta-total-display">
-                    <div class="cta-total-row">
-                        <span>Programa Seleccionado + Bonos:</span>
-                        <span>$37.00 USD</span>
-                    </div>
-                    <div class="cta-total-row bump1-summary" style="display: none;">
-                        <span>Complemento: Diseña y Crea Cuadros en Resina:</span>
-                        <span>$23.00 USD</span>
-                    </div>
-                    <div class="cta-total-row bump2-summary" style="display: none;">
-                        <span>Complemento: Moldes de Silicona Personalizados:</span>
-                        <span>$10.00 USD</span>
-                    </div>
-                    <div class="cta-total-row final-total">
-                        <span>Total de tu inversión hoy:</span>
-                        <span class="final-price-text">$37.00 USD</span>
-                    </div>
-                </div>
                 <a href="https://go.hotmart.com/J105288814V?ap=1d28" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
-                    <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA</button>
+                    <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA ($37 USD)</button>
                 </a>
                 <div class="cta-trust-row">
                     <div class="cta-trust-badge">
@@ -2214,56 +2157,7 @@
         updateCountdown();
         setInterval(updateCountdown, 1000);
 
-        // --- 3. DYNAMIC ORDER BUMPS CALCULATOR (SINCRONIZA TODOS LOS CTAs) ---
-        const basePrice = 37.00;
-        let currentBumpsTotal = 0;
-        const selectedBumps = {
-            bump1: false,
-            bump2: false
-        };
 
-        function toggleBump(bumpId, price, element) {
-            const checkbox = document.getElementById(bumpId);
-            
-            // Invertir selección
-            selectedBumps[bumpId] = !selectedBumps[bumpId];
-            checkbox.checked = selectedBumps[bumpId];
-            
-            // Sincronizar clases visuales
-            if (selectedBumps[bumpId]) {
-                element.classList.add('selected');
-                currentBumpsTotal += price;
-            } else {
-                element.classList.remove('selected');
-                currentBumpsTotal -= price;
-            }
-
-            // Sincronizar renglones de resumen en los tres CTAs
-            const summaryRows = document.querySelectorAll(`.${bumpId}-summary`);
-            summaryRows.forEach(row => {
-                row.style.display = selectedBumps[bumpId] ? 'flex' : 'none';
-            });
-
-            // Recalcular Precio Final
-            const finalPriceVal = basePrice + currentBumpsTotal;
-            const finalPriceText = `$${finalPriceVal.toFixed(2)} USD`;
-            
-            // Actualizar etiquetas de precio final en todos los CTAs
-            document.querySelectorAll('.final-price-text').forEach(el => {
-                el.innerText = finalPriceText;
-            });
-
-            // Actualizar textos de los botones CTA
-            const baseBtnText = "QUIERO APROVECHAR ESTA OFERTA";
-            const buttons = document.querySelectorAll('.cta-button-text');
-            buttons.forEach(btn => {
-                if (currentBumpsTotal > 0) {
-                    btn.innerText = `${baseBtnText} (${finalPriceText})`;
-                } else {
-                    btn.innerText = baseBtnText;
-                }
-            });
-        }
     </script>
 </body>
 </html>
