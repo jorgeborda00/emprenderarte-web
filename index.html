@@ -66,44 +66,42 @@
     </noscript>
     -->
 
-    <!-- MICROSOFT CLARITY (ACTIVADO) -->
+    <!-- 
+      MICROSOFT CLARITY
+      Descomenta e introduce tu código para habilitar mapas de calor y grabaciones de sesión de inmediato.
+    
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "xzg4x76o4s");
+        })(window,document,"clarity","script","TU_CODIGO_DE_CLARITY_AQUI");
     </script>
+    -->
 
     <!-- Estilos CSS3 Avanzados -->
     <style>
-        /* Variables del Sistema de Diseño (Boutique de Lujo - EmprenderArte) */
+        /* Variables del Sistema de Diseño (Boutique de Lujo) */
         :root {
-            --primary: #087F83;        /* Turquesa profundo */
-            --primary-light: #0cb3b8;  /* Turquesa brillante */
-            --primary-dark: #054e50;   /* Turquesa oscuro */
-            --secondary: #fff0f3;      /* Rosa Blush Pastel */
-            --secondary-mid: #f48fb1;  /* Rosa Intermedio */
-            --secondary-dark: #D81B60; /* Rosa/fucsia elegante */
-            --accent-gold: #C99A3D;    /* Dorado */
+            --primary: #064e43;        /* Verde Esmeralda Profundo */
+            --primary-light: #0a6255;  /* Verde Esmeralda Brillante */
+            --primary-dark: #032a24;   /* Verde Esmeralda Muy Oscuro */
+            --secondary: #fae3e3;      /* Rosa Blush Pastel */
+            --secondary-mid: #f3b2c3;  /* Rosa Intermedio */
+            --secondary-dark: #d85d77; /* Rosa Contraste / Enfoque */
+            --accent-gold: #c59b27;    /* Oro Base */
             
             /* Gradiente de Oro Líquido Premium */
-            --gold-gradient: linear-gradient(135deg, #a47c2b 0%, #c99a3d 25%, #ebd193 50%, #c99a3d 75%, #a47c2b 100%);
+            --gold-gradient: linear-gradient(135deg, #a8811f 0%, #d8b257 25%, #f7e387 50%, #d8b257 75%, #a8811f 100%);
             
-            --bg-cream: #FFF9F4;       /* Marfil */
-            --bg-cream-dark: #fbf2e9;  /* Crema de Contraste */
-            --text-dark: #073B4C;      /* Azul petróleo */
-            --text-muted: #406673;     /* Texto Secundario/Muted */
+            --bg-cream: #fdfbf7;       /* Crema Suave de Fondo */
+            --bg-cream-dark: #f5f0e6;  /* Crema de Contraste */
+            --text-dark: #1e2826;      /* Texto Principal Oscuro */
+            --text-muted: #536461;     /* Texto Secundario/Muted */
             --text-light: #ffffff;     /* Texto Blanco */
-            
-            /* CTA Coral */
-            --cta-coral: #F05A47;
-            --cta-gradient: linear-gradient(135deg, #f05a47 0%, #ff7663 50%, #d8412e 100%);
-            --shadow-coral: 0 8px 25px rgba(240, 90, 71, 0.35);
-
-            --shadow-soft: 0 10px 30px rgba(8, 127, 131, 0.04);
-            --shadow-medium: 0 15px 40px rgba(8, 127, 131, 0.08);
-            --shadow-gold: 0 8px 25px rgba(201, 154, 61, 0.25);
+            --shadow-soft: 0 10px 30px rgba(6, 78, 67, 0.04);
+            --shadow-medium: 0 15px 40px rgba(6, 78, 67, 0.08);
+            --shadow-gold: 0 8px 25px rgba(197, 155, 39, 0.25);
             
             --font-headings: 'Cormorant Garamond', serif;
             --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -176,7 +174,7 @@
 
         /* Barra de Urgencia Superior */
         .urgency-bar {
-            background-color: var(--text-dark);
+            background-color: var(--primary-dark);
             color: var(--secondary);
             font-size: 0.85rem;
             font-weight: 600;
@@ -199,17 +197,14 @@
             background: var(--gold-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 1.45rem;
-            margin-left: 5px;
-            display: inline-block;
-            vertical-align: middle;
+            font-size: 0.95rem;
         }
 
-        /* Botón de Acción Principal (Efectos Premium de Hover y Pulso Dorado) */
+        /* Botón de Acción Principal (Efectos Premium de Hover y Pulso) */
         .btn-cta {
             display: inline-block;
             background: var(--gold-gradient);
-            color: var(--text-dark);
+            color: var(--primary-dark);
             font-weight: 800;
             font-size: 1.15rem;
             padding: 20px 48px;
@@ -248,8 +243,8 @@
 
         .btn-cta:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(201, 154, 61, 0.55);
-            color: var(--text-dark);
+            box-shadow: 0 12px 30px rgba(197, 155, 39, 0.5);
+            color: var(--primary-dark);
         }
 
         .btn-cta:active {
@@ -258,40 +253,14 @@
 
         @keyframes pulse-gold {
             0% {
-                box-shadow: 0 0 0 0 rgba(201, 154, 61, 0.6);
+                box-shadow: 0 0 0 0 rgba(197, 155, 39, 0.5);
             }
             70% {
-                box-shadow: 0 0 0 15px rgba(201, 154, 61, 0);
+                box-shadow: 0 0 0 15px rgba(197, 155, 39, 0);
             }
             100% {
-                box-shadow: 0 0 0 0 rgba(201, 154, 61, 0);
+                box-shadow: 0 0 0 0 rgba(197, 155, 39, 0);
             }
-        }
-
-        /* Secciones con Fondo Azul Petróleo para mayor profundidad y autoridad */
-        .bg-petroleo {
-            background-color: var(--text-dark) !important;
-            color: var(--text-light);
-        }
-
-        .bg-petroleo h2.section-title {
-            color: var(--text-light) !important;
-        }
-
-        .bg-petroleo h2.section-title::after {
-            background: var(--gold-gradient) !important;
-        }
-
-        .bg-petroleo > .container > p {
-            color: rgba(255, 255, 255, 0.85) !important;
-        }
-
-        .bg-petroleo .order-bump-title {
-            color: var(--text-light) !important;
-        }
-
-        .bg-petroleo .chat-testimonials-title {
-            color: var(--text-light) !important;
         }
 
         /* HEADER BRANDING */
@@ -395,7 +364,7 @@
         }
 
         /* BLOQUE 3: VIDEO SECCIÓN */
-        /* .video-container {
+        <!-- .video-container {
             max-width: 800px;
             margin: 0 auto;
             position: relative;
@@ -412,7 +381,7 @@
             height: 100%;
             object-fit: cover;
             display: block;
-        } */
+        } -->
 		.video-container {
 			max-width: 800px;
 			margin: 0 auto;
@@ -881,8 +850,8 @@
         }
 
         .order-bump-card {
-            background-color: rgba(255, 255, 255, 0.04);
-            border: 2px dashed var(--accent-gold);
+            background-color: var(--secondary-light);
+            border: 2px dashed var(--secondary-dark);
             border-radius: var(--border-radius);
             padding: 20px;
             margin-bottom: 16px;
@@ -894,12 +863,12 @@
         }
 
         .order-bump-card:hover {
-            background-color: rgba(255, 255, 255, 0.08);
+            background-color: #fff4f5;
         }
 
         .order-bump-card.selected {
-            background-color: rgba(201, 154, 61, 0.12);
-            border-color: var(--secondary-dark);
+            background-color: #fff0f2;
+            border-color: var(--primary-light);
             border-style: solid;
         }
 
@@ -907,7 +876,7 @@
             appearance: none;
             width: 22px;
             height: 22px;
-            border: 2px solid var(--accent-gold);
+            border: 2px solid var(--secondary-dark);
             border-radius: 5px;
             background-color: var(--text-light);
             cursor: pointer;
@@ -919,8 +888,8 @@
         }
 
         .order-bump-card.selected .bump-chk-box {
-            background-color: var(--secondary-dark);
-            border-color: var(--secondary-dark);
+            background-color: var(--primary);
+            border-color: var(--primary);
         }
 
         .bump-chk-box::after {
@@ -938,7 +907,7 @@
         .order-bump-card-info h4 {
             font-family: var(--font-body);
             font-size: 1rem;
-            color: var(--accent-gold) !important;
+            color: var(--primary-dark);
             margin-bottom: 6px;
             display: flex;
             justify-content: space-between;
@@ -948,7 +917,7 @@
 
         .order-bump-card-info p {
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.8) !important;
+            color: var(--text-muted);
             line-height: 1.4;
         }
 
@@ -1062,7 +1031,7 @@
             fill: var(--primary-light);
         }
 
-        /* .video-testimonial-player {
+        <!-- .video-testimonial-player {
             width: 100%;
             aspect-ratio: 9/16;
             border-radius: 12px;
@@ -1072,7 +1041,7 @@
             max-height: 480px;
             object-fit: cover;
             margin: 0 auto;
-        } */
+        } -->
 		
 		.video-testimonial-player-wrapper {
 			width: 100%;
@@ -1138,11 +1107,11 @@
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
-            /* .video-testimonial-player {
+            <!-- .video-testimonial-player {
                 max-height: 400px;
                 aspect-ratio: 4/5;
                 object-fit: contain;
-            } */
+            } -->
 			.video-testimonial-player-wrapper {
 				max-height: 400px;
 				aspect-ratio: 4/5;
@@ -1416,15 +1385,10 @@
             color: var(--secondary);
         }
 
-        .footer p {
-            color: rgba(255, 255, 255, 0.8) !important;
-            font-size: 0.95rem;
-        }
-
         .footer-disclaimer {
             margin-top: 24px;
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.5) !important;
+            color: rgba(255, 255, 255, 0.35);
             line-height: 1.5;
             max-width: 700px;
             margin-left: auto;
@@ -1481,7 +1445,7 @@
 
     <!-- Barra de Urgencia Superior -->
     <div class="urgency-bar">
-        <span>⚡ ¡DESCUENTO EXCLUSIVO DEL 83% DISPONIBLE POR TIEMPO LIMITADO!</span>
+        <span>⚡ ¡DESCUENTO EXCLUSIVO DEL 75% DISPONIBLE POR TIEMPO LIMITADO!</span>
         <span>La oferta expira en: <span id="countdown" class="countdown-timer">15:00</span></span>
     </div>
 
@@ -1501,7 +1465,7 @@
                     PORTAL DE RECOMENDACIÓN EXPERTA
                 </div>
                 <!-- Bloque 1: Título -->
-                <h1 class="hero-title">Descubre el método con el que las mujeres ya están vendiendo sus primeras <span>20 piezas de resina</span> en menos de 30 días, sin salir de casa.</h1>
+                <h1 class="hero-title">Convierte tu Pasión en un Negocio Rentable Creando <span>Hermosas Piezas de Resina</span> Desde Casa</h1>
                 <!-- Bloque 2: Subtítulo -->
                 <p class="hero-subtitle">
                     Descubre el método paso a paso, sin experiencia previa, para dominar el arte de la resina y generar ingresos haciendo lo que amas con el respaldo de EmprenderArte.
@@ -1569,7 +1533,7 @@
     </section>
 
     <!-- SECCIÓN DE IDENTIFICACIÓN DEL DOLOR Y LA SOLUCIÓN (AGITACIÓN) -->
-    <section class="pain-solution-section bg-petroleo">
+    <section class="pain-solution-section">
         <div class="container">
             <h2 class="section-title">El Puente de la Creatividad al Negocio</h2>
             <div class="pain-solution-grid">
@@ -1652,7 +1616,7 @@
     </section>
 
     <!-- BLOQUE 6: MÓDULOS / CONTENIDO -->
-    <section class="syllabus-section bg-petroleo">
+    <section class="syllabus-section">
         <div class="container">
             <h2 class="section-title">Un Programa Completo Diseñado para Llevarte de Novata a Experta</h2>
             <div class="accordion">
@@ -1726,7 +1690,7 @@
     </section>
 
     <!-- BLOQUE 7: PRESENTACIÓN DE LA OFERTA & BONOS & ORDER BUMPS -->
-    <section class="pricing-section bg-petroleo">
+    <section class="pricing-section">
         <div class="container">
             <h2 class="section-title">Detalle Completo de lo que Recibes al Inscribirte Hoy</h2>
             
@@ -1803,8 +1767,8 @@
                     <div>
                         <div class="offer-header-badge">OFERTA LIMITADA</div>
                         <div class="original-price-strike">VALOR TOTAL: <span>$219.00 USD</span></div>
-                        <div class="price-box">HOY POR SOLO <br><span>$37.00 USD</span></div>
-                        <div class="saving-box">AHORRAS: $182.00 USD (Más del 83% de descuento)</div>
+                        <div class="price-box">HOY POR SOLO <br><span>$47.00 USD</span></div>
+                        <div class="saving-box">AHORRAS: $172.00 USD (Más del 75% de descuento)</div>
                         
                         <ul class="offer-bullet-list">
                             <li class="offer-bullet">
@@ -1858,14 +1822,14 @@
     </section>
 
     <!-- BLOQUE 8: BOTÓN DE LLAMADO A LA ACCIÓN (CTA 1) -->
-    <section class="cta-block-section bg-petroleo" id="cta-1">
+    <section class="cta-block-section" id="cta-1">
         <div class="container">
             <div class="cta-container">
                 <!-- Resumen de Compra Dinámico -->
                 <div class="cta-total-display">
                     <div class="cta-total-row">
                         <span>Programa Seleccionado + Bonos:</span>
-                        <span>$37.00 USD</span>
+                        <span>$47.00 USD</span>
                     </div>
                     <div class="cta-total-row bump1-summary" style="display: none;">
                         <span>Complemento: Diseña y Crea Cuadros en Resina:</span>
@@ -1877,10 +1841,10 @@
                     </div>
                     <div class="cta-total-row final-total">
                         <span>Total de tu inversión hoy:</span>
-                        <span class="final-price-text">$37.00 USD</span>
+                        <span class="final-price-text">$47.00 USD</span>
                     </div>
                 </div>
-                <a href="https://go.hotmart.com/J105288814V?ap=1d28" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
+                <a href="https://go.hotmart.com/J105288814V?ap=b12e" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
                     <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA</button>
                 </a>
                 <div class="cta-trust-row">
@@ -1898,7 +1862,7 @@
     </section>
 
     <!-- BLOQUE 9: TESTIMONIOS -->
-    <section class="testimonials-section bg-petroleo">
+    <section class="testimonials-section">
         <div class="container">
             <h2 class="section-title">Lo que Dicen las Alumnas Satisfechas del curso Diseña y Crea con Resina</h2>
             
@@ -1978,13 +1942,13 @@
     </section>
 
     <!-- BLOQUE 11: LLAMADO A LA ACCIÓN (CTA 2) -->
-    <section class="cta-block-section bg-petroleo" id="cta-2">
+    <section class="cta-block-section" id="cta-2">
         <div class="container">
             <div class="cta-container">
                 <div class="cta-total-display">
                     <div class="cta-total-row">
                         <span>Programa Seleccionado + Bonos:</span>
-                        <span>$37.00 USD</span>
+                        <span>$47.00 USD</span>
                     </div>
                     <div class="cta-total-row bump1-summary" style="display: none;">
                         <span>Complemento: Diseña y Crea Cuadros en Resina:</span>
@@ -1996,10 +1960,10 @@
                     </div>
                     <div class="cta-total-row final-total">
                         <span>Total de tu inversión hoy:</span>
-                        <span class="final-price-text">$37.00 USD</span>
+                        <span class="final-price-text">$47.00 USD</span>
                     </div>
                 </div>
-                <a href="https://go.hotmart.com/J105288814V?ap=1d28" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
+                <a href="https://go.hotmart.com/J105288814V?ap=b12e" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
                     <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA</button>
                 </a>
                 <div class="cta-trust-row">
@@ -2028,13 +1992,13 @@
     </section>
 
     <!-- BLOQUE 13: LLAMADO A LA ACCIÓN (CTA 3) -->
-    <section class="cta-block-section bg-petroleo" id="cta-3">
+    <section class="cta-block-section" id="cta-3">
         <div class="container">
             <div class="cta-container">
                 <div class="cta-total-display">
                     <div class="cta-total-row">
                         <span>Programa Seleccionado + Bonos:</span>
-                        <span>$37.00 USD</span>
+                        <span>$47.00 USD</span>
                     </div>
                     <div class="cta-total-row bump1-summary" style="display: none;">
                         <span>Complemento: Diseña y Crea Cuadros en Resina:</span>
@@ -2046,10 +2010,10 @@
                     </div>
                     <div class="cta-total-row final-total">
                         <span>Total de tu inversión hoy:</span>
-                        <span class="final-price-text">$37.00 USD</span>
+                        <span class="final-price-text">$47.00 USD</span>
                     </div>
                 </div>
-                <a href="https://go.hotmart.com/J105288814V?ap=1d28" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
+                <a href="https://go.hotmart.com/J105288814V?ap=b12e" target="_blank" rel="noopener noreferrer" class="cta-btn-link">
                     <button class="btn-cta cta-button-text">QUIERO APROVECHAR ESTA OFERTA</button>
                 </a>
                 <div class="cta-trust-row">
@@ -2152,7 +2116,7 @@
                 "Crea con pasión, emprende con propósito."
             </p>
             <p class="footer-disclaimer">
-                Descargo de responsabilidad: Este sitio web es un portal de recomendación y afiliación de infoproductos digitales. Los resultados de aprendizaje y económicos pueden variar según la dedicación, esfuerzo y puesta en práctica de cada alumna. Hotmart es una plataforma de distribución de productos digitales y no tiene vínculo laboral con el recomendador. Este sitio web no forma parte de, ni está respaldado por Facebook, Instagram, Meta Platforms, Inc. o sus entidades asociadas. Facebook e Instagram son marcas comerciales de Meta Platforms, Inc.
+                Descargo de responsabilidad: Este sitio web es un portal de recomendación y afiliación de infoproductos digitales. Los resultados de aprendizaje y económicos pueden variar según la dedicación, esfuerzo y puesta en práctica de cada alumna. Hotmart es una plataforma de distribución de productos digitales y no tiene vínculo laboral con el recomendador.
             </p>
         </div>
     </footer>
@@ -2191,31 +2155,27 @@
         });
 
         // --- 2. CONTADOR REGRESIVO DE URGENCIA ---
+        let timeInMinutes = 15;
+        let currentTime = timeInMinutes * 60;
         const countdownEl = document.getElementById('countdown');
 
         function updateCountdown() {
-            const now = new Date();
-            const midnight = new Date();
-            midnight.setHours(24, 0, 0, 0); // Establece a las 00:00:00 del día siguiente
+            const minutes = Math.floor(currentTime / 60);
+            let seconds = currentTime % 60;
+
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            countdownEl.innerHTML = `${minutes}:${seconds}`;
             
-            const diffMs = midnight - now;
-            
-            const totalSeconds = Math.floor(diffMs / 1000);
-            const hours = Math.floor(totalSeconds / 3600);
-            const minutes = Math.floor((totalSeconds % 3600) / 60);
-            const seconds = totalSeconds % 60;
-            
-            const hoursStr = hours < 10 ? '0' + hours : hours;
-            const minutesStr = minutes < 10 ? '0' + minutes : minutes;
-            const secondsStr = seconds < 10 ? '0' + seconds : seconds;
-            
-            countdownEl.innerHTML = `${hoursStr}:${minutesStr}:${secondsStr}`;
+            if (currentTime > 0) {
+                currentTime--;
+            } else {
+                currentTime = timeInMinutes * 60; // loop comercial
+            }
         }
-        updateCountdown();
         setInterval(updateCountdown, 1000);
 
         // --- 3. DYNAMIC ORDER BUMPS CALCULATOR (SINCRONIZA TODOS LOS CTAs) ---
-        const basePrice = 37.00;
+        const basePrice = 47.00;
         let currentBumpsTotal = 0;
         const selectedBumps = {
             bump1: false,
